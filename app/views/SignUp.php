@@ -14,7 +14,7 @@
         <div class="login-container">
             <h2>انشاء حساب جديد</h2>
 
-            <form action="signup_process.php" method="post">
+            <form action="../controllers/signup_process.php" method="post">
                 <input type="text" name="name" placeholder="الاسم" required />
                 <input type="email" name="email" placeholder="البريد الإلكتروني" required />
                 <input type="text" name="phone" placeholder="رقم الهاتف" required />
