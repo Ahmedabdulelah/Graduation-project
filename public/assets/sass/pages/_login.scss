@@ -1,0 +1,19 @@
+.login-container {
+  border: 2px solid yellow;
+  @include center;
+  @include slideAndFade(200px);
+  @include changBg;
+
+  //   @media only screen and (min-width:300px) {
+  //     background-color: red;
+  //   }
+  //   @include for_breakpoint(desktop) {
+  //     background-color: yellowgreen;
+  //   }
+}
+h1 {
+  font-size: 200px;
+}
+form {
+  @include fade-in;
+}
