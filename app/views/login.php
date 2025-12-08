@@ -7,12 +7,13 @@
                 <title>تسجيل الدخول</title>
                 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
                         rel="stylesheet" />
-                <link rel="stylesheet" href="../../Static/css/login.css" />
+                <!-- <link rel="stylesheet" href="../../public/assets/css/login.css" /> -->
+                <link rel="stylesheet" href="../../final-Css/main.css">
         </head>
 
         <body>
-
-                <div class="login-container">
+<section>
+                <div class="login-container " >
                         <h2>تسجيل الدخول</h2>
                                                 
                         <?php
@@ -28,9 +29,16 @@
                         ?>
 
                         <form action="log_in_proces.php" method="post">
-                                <input type="text" name="identifier" placeholder="رقم الهاتف أو البريد الإلكتروني"
-                                        required />
-                                <input type="password" name="password" placeholder="كلمة المرور" required />
+                      <div class=' input-group'>
+                                  <input type="text" name="identifier" id='identifier' placeholder="" required/>
+                                         <label for='identifier'>رقم الهاتف أو البريد الإلكتروني</label>
+                      </div>
+
+                      <div class=' input-group'>
+                                <input type="password" name="password" id="password" placeholder="" required />
+                                         <label for='password'>كلمة المرور</label>
+
+                                </div>
                                 <button type="submit" class="btn">تسجيل دخول</button>
                         </form>
 

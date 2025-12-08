@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'Core/db.php';
+require_once '../app/Core/db.php';
 if(isset($_SESSION['user_id'])){
 $user_id = $_SESSION['user_id'];
 $login = true;
@@ -77,7 +77,7 @@ if ($user_id) {
             <?php if(isset( $login)){ ?>
             <a href="Templates/Pages/profile.php" class="btn btn-red">لوحة المستخدم</a>
             <?php } else{ ?>
-            <a href="Templates/Forms/login.php" class="btn btn-outline-danger">دخول / تسجيل</a>
+            <a href="../app/views/login.php" class="btn btn-outline-danger">دخول / تسجيل</a>
             <?php } ?>
           </li>
         </ul>
